@@ -1,0 +1,488 @@
+/* modalreparation.css */
+.repair-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1001;
+    padding: 20px;
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  .repair-modal-content {
+    background: white;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    animation: slideInScale 0.4s ease-out;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Header */
+  .repair-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 32px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 20px 20px 0 0;
+    color: white;
+  }
+  
+  .device-info-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .device-image-header {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .device-image-small {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .device-details-header {
+    flex: 1;
+  }
+  
+  .device-name {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 4px;
+    color: white;
+  }
+  
+  .device-brand-header {
+    font-size: 14px;
+    margin: 0;
+    opacity: 0.9;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+  
+  .repair-modal-close {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: white;
+  }
+  
+  .repair-modal-close:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+  }
+  
+  /* Section titre */
+  .repair-modal-title-section {
+    padding: 32px 32px 24px;
+    text-align: center;
+    background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+  }
+  
+  .repair-main-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0 0 8px;
+  }
+  
+  .repair-subtitle {
+    font-size: 16px;
+    color: #6b7280;
+    margin: 0;
+  }
+  
+  /* Services de réparation */
+  .repair-services {
+    padding: 0 32px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .repair-service-card {
+    border: 3px solid #f3f4f6;
+    border-radius: 16px;
+    padding: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .repair-service-card:hover {
+    border-color: #667eea;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
+  }
+  
+  .repair-service-card.selected {
+    border-color: #667eea;
+    background: linear-gradient(135deg, #f0f4ff 0%, #e0edff 100%);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
+  }
+  
+  .service-icon {
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 16px;
+    flex-shrink: 0;
+  }
+  
+  .service-content {
+    flex: 1;
+  }
+  
+  .service-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8px;
+  }
+  
+  .service-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0;
+  }
+  
+  .service-price {
+    font-size: 24px;
+    font-weight: 800;
+    color: #059669;
+    background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+    padding: 6px 16px;
+    border-radius: 12px;
+    border: 2px solid #10b981;
+  }
+  
+  .service-description {
+    font-size: 14px;
+    color: #6b7280;
+    margin: 0 0 12px;
+    line-height: 1.4;
+  }
+  
+  .service-duration {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: #374151;
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+  
+  .service-duration svg {
+    color: #667eea;
+  }
+  
+  .service-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .feature-tag {
+    background: #e0f2fe;
+    color: #0369a1;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .service-selector {
+    flex-shrink: 0;
+  }
+  
+  .radio-button {
+    width: 24px;
+    height: 24px;
+    border: 3px solid #d1d5db;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+  }
+  
+  .radio-button.checked {
+    border-color: #667eea;
+  }
+  
+  .radio-inner {
+    width: 12px;
+    height: 12px;
+    background: #667eea;
+    border-radius: 50%;
+    animation: scaleIn 0.2s ease-out;
+  }
+  
+  /* Footer */
+  .repair-modal-footer {
+    padding: 24px 32px;
+    background: #f9fafb;
+    border-radius: 0 0 20px 20px;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .booking-summary {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .selected-service-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .summary-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1f2937;
+  }
+  
+  .summary-duration {
+    font-size: 14px;
+    color: #6b7280;
+  }
+  
+  .booking-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+  }
+  
+  .btn-location {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    color: white;
+    padding: 16px 24px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 16px;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-height: 56px;
+  }
+  
+  .btn-location:hover:not(.disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+  }
+  
+  .btn-location.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+  }
+  
+  .btn-location svg {
+    flex-shrink: 0;
+  }
+  
+  .btn-secondary {
+    background: white;
+    border: 2px solid #d1d5db;
+    color: #374151;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 16px;
+  }
+  
+  .btn-secondary:hover {
+    border-color: #9ca3af;
+    background: #f9fafb;
+  }
+  
+  .btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 16px;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  }
+  
+  .btn-primary:hover:not(.disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+  }
+  
+  .btn-primary.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideInScale {
+    from {
+      opacity: 0;
+      transform: scale(0.9) translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+  }
+  
+  @keyframes scaleIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .repair-modal-content {
+      margin: 10px;
+      max-height: 95vh;
+    }
+  
+    .repair-modal-header {
+      padding: 20px;
+      flex-direction: column;
+      gap: 16px;
+      text-align: center;
+    }
+  
+    .device-info-header {
+      flex-direction: column;
+      gap: 12px;
+    }
+  
+    .repair-modal-title-section {
+      padding: 24px 20px 20px;
+    }
+  
+    .repair-main-title {
+      font-size: 24px;
+    }
+  
+    .repair-services {
+      padding: 0 20px 24px;
+    }
+  
+    .repair-service-card {
+      flex-direction: column;
+      text-align: center;
+      gap: 16px;
+      padding: 20px;
+    }
+  
+    .service-header {
+      flex-direction: column;
+      gap: 8px;
+      align-items: center;
+    }
+  
+    .service-price {
+      font-size: 22px;
+    }
+  
+    .repair-modal-footer {
+      padding: 20px;
+    }
+  
+    .booking-actions {
+      flex-direction: column;
+      gap: 12px;
+    }
+  
+    .btn-location {
+      font-size: 15px;
+      padding: 14px 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .repair-modal-overlay {
+      padding: 10px;
+    }
+  
+    .repair-modal-header {
+      padding: 16px;
+    }
+  
+    .device-name {
+      font-size: 18px;
+    }
+  
+    .repair-main-title {
+      font-size: 20px;
+    }
+  
+    .service-title {
+      font-size: 18px;
+    }
+  
+    .service-price {
+      font-size: 20px;
+      padding: 4px 12px;
+    }
+  
+    .btn-secondary,
+    .btn-primary,
+    .btn-location {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }

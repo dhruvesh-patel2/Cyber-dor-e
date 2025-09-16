@@ -1,0 +1,57 @@
+// src/Components/Hero/Data/apareilinfo.js
+
+export const devices = [
+  // iPhone
+  { id: 'iphone', title: 'iPhone 6', brand: 'iPhone', price: '', image: 'https://via.placeholder.com/150', alt: 'iPhone 6' },
+  { id: 'iphone', title: 'iPhone 6 Plus', brand: 'iPhone', price: '', image: 'https://via.placeholder.com/150', alt: 'iPhone 6 Plus' },
+  { id: 'iphone', title: 'iPhone 6S', brand: 'iPhone', price: '', image: 'https://via.placeholder.com/150', alt: 'iPhone 6S' },
+  { id: 'iphone', title: 'iPhone 6S Plus', brand: 'iPhone', price: '', image: 'https://via.placeholder.com/150', alt: 'iPhone 6S Plus' },
+  { id: 'iphone', title: 'iPhone 7', brand: 'iPhone', price: '', image: 'https://via.placeholder.com/150', alt: 'iPhone 7' },
+  { id: 'iphone', title: 'iPhone 7 Plus', brand: 'iPhone', price: '', image: 'https://via.placeholder.com/150', alt: 'iPhone 7 Plus' },
+  { id: 'iphone', title: 'iPhone 8', brand: 'iPhone', price: '', image: 'https://via.placeholder.com/150', alt: 'iPhone 8' },
+  { id: 'iphone', title: 'iPhone 8 Plus', brand: 'iPhone', price: '', image: 'https://via.placeholder.com/150', alt: 'iPhone 8 Plus' },
+  { id: 'iphone', title: 'iPhone X', brand: 'iPhone', price: '', image: 'https://via.placeholder.com/150', alt: 'iPhone X' },
+  { id: 'iphone', title: 'iPhone XR', brand: 'iPhone', price: '', image: 'https://via.placeholder.com/150', alt: 'iPhone XR' },
+  { id: 'iphone', title: 'iPhone XS', brand: 'iPhone', price: '', image: 'https://via.placeholder.com/150', alt: 'iPhone XS' },
+  { id: 'iphone', title: 'iPhone XS Max', brand: 'iPhone', price: '', image: 'https://via.placeholder.com/150', alt: 'iPhone XS Max' },
+  { id: 'iphone', title: 'iPhone 11', brand: 'iPhone', price: '', image: 'https://via.placeholder.com/150', alt: 'iPhone 11' },
+  { id: 'iphone', title: 'iPhone 11 Pro', brand: 'iPhone', price: '', image: 'https://via.placeholder.com/150', alt: 'iPhone 11 Pro' },
+  { id: 'iphone', title: 'iPhone 11 Pro Max', brand: 'iPhone', price: '', image: 'https://via.placeholder.com/150', alt: 'iPhone 11 Pro Max' },
+  { id: 'iphone', title: 'iPhone 12', brand: 'iPhone', price: '', image: 'https://via.placeholder.com/150', alt: 'iPhone 12' },
+  { id: 'iphone', title: 'iPhone 12 Mini', brand: 'iPhone', price: '', image: 'https://via.placeholder.com/150', alt: 'iPhone 12 Mini' },
+  { id: 'iphone', title: 'iPhone 12 Pro', brand: 'iPhone', price: '', image: 'https://via.placeholder.com/150', alt: 'iPhone 12 Pro' },
+  { id: 'iphone', title: 'iPhone 12 Pro Max', brand: 'iPhone', price: '', image: 'https://via.placeholder.com/150', alt: 'iPhone 12 Pro Max' },
+  { id: 'iphone', title: 'iPhone 13', brand: 'iPhone', price: '', image: 'https://via.placeholder.com/150', alt: 'iPhone 13' },
+  { id: 'iphone', title: 'iPhone 13 Mini', brand: 'iPhone', price: '', image: 'https://via.placeholder.com/150', alt: 'iPhone 13 Mini' },
+  { id: 'iphone', title: 'iPhone 13 Pro', brand: 'iPhone', price: '', image: 'https://via.placeholder.com/150', alt: 'iPhone 13 Pro' },
+  { id: 'iphone', title: 'iPhone 13 Pro Max', brand: 'iPhone', price: '', image: 'https://via.placeholder.com/150', alt: 'iPhone 13 Pro Max' },
+  { id: 'iphone', title: 'iPhone 14', brand: 'iPhone', price: '', image: 'https://via.placeholder.com/150', alt: 'iPhone 14' },
+  { id: 'iphone', title: 'iPhone 14 Plus', brand: 'iPhone', price: '', image: 'https://via.placeholder.com/150', alt: 'iPhone 14 Plus' },
+  { id: 'iphone', title: 'iPhone 14 Pro', brand: 'iPhone', price: '', image: 'https://via.placeholder.com/150', alt: 'iPhone 14 Pro' },
+  { id: 'iphone', title: 'iPhone 14 Pro Max', brand: 'iPhone', price: '', image: 'https://via.placeholder.com/150', alt: 'iPhone 14 Pro Max' },
+  { id: 'iphone', title: 'iPhone 15', brand: 'iPhone', price: '', image: 'https://via.placeholder.com/150', alt: 'iPhone 15' },
+  { id: 'iphone', title: 'iPhone 15 Plus', brand: 'iPhone', price: '', image: 'https://via.placeholder.com/150', alt: 'iPhone 15 Plus' },
+  { id: 'iphone', title: 'iPhone 15 Pro', brand: 'iPhone', price: '', image: 'https://via.placeholder.com/150', alt: 'iPhone 15 Pro' },
+  { id: 'iphone', title: 'iPhone 15 Pro Max', brand: 'iPhone', price: '', image: 'https://via.placeholder.com/150', alt: 'iPhone 15 Pro Max' },
+
+  // Samsung Galaxy
+  { id: 'galaxy', title: 'Galaxy A80', brand: 'Samsung', price: '', image: 'https://via.placeholder.com/150', alt: 'Galaxy A80' },
+  { id: 'galaxy', title: 'Galaxy A73 5G', brand: 'Samsung', price: '', image: 'https://via.placeholder.com/150', alt: 'Galaxy A73 5G' },
+  { id: 'galaxy', title: 'Galaxy A72 5G', brand: 'Samsung', price: '', image: 'https://via.placeholder.com/150', alt: 'Galaxy A72 5G' },
+  { id: 'galaxy', title: 'Galaxy A72 4G', brand: 'Samsung', price: '', image: 'https://via.placeholder.com/150', alt: 'Galaxy A72 4G' },
+  { id: 'galaxy', title: 'Galaxy A71', brand: 'Samsung', price: '', image: 'https://via.placeholder.com/150', alt: 'Galaxy A71' },
+  { id: 'galaxy', title: 'Galaxy A70', brand: 'Samsung', price: '', image: 'https://via.placeholder.com/150', alt: 'Galaxy A70' },
+  { id: 'galaxy', title: 'Galaxy S21', brand: 'Samsung', price: '', image: 'https://via.placeholder.com/150', alt: 'Galaxy S21' },
+  { id: 'galaxy', title: 'Galaxy S22', brand: 'Samsung', price: '', image: 'https://via.placeholder.com/150', alt: 'Galaxy S22' },
+  { id: 'galaxy', title: 'Galaxy S23', brand: 'Samsung', price: '', image: 'https://via.placeholder.com/150', alt: 'Galaxy S23' },
+
+  // Redmi
+  { id: 'redmi', title: 'Redmi A3', brand: 'Redmi', price: '', image: 'https://via.placeholder.com/150', alt: 'Redmi A3' },
+  { id: 'redmi', title: 'Redmi A4', brand: 'Redmi', price: '', image: 'https://via.placeholder.com/150', alt: 'Redmi A4' },
+  { id: 'redmi', title: 'Redmi Note 8', brand: 'Redmi', price: '', image: 'https://via.placeholder.com/150', alt: 'Redmi Note 8' },
+  { id: 'redmi', title: 'Redmi 9', brand: 'Redmi', price: '', image: 'https://via.placeholder.com/150', alt: 'Redmi 9' },
+  { id: 'redmi', title: 'Redmi Note 9', brand: 'Redmi', price: '', image: 'https://via.placeholder.com/150', alt: 'Redmi Note 9' },
+  { id: 'redmi', title: 'Redmi Note 10', brand: 'Redmi', price: '', image: 'https://via.placeholder.com/150', alt: 'Redmi Note 10' },
+  { id: 'redmi', title: 'Redmi Note 11', brand: 'Redmi', price: '', image: 'https://via.placeholder.com/150', alt: 'Redmi Note 11' },
+  { id: 'redmi', title: 'Redmi Note 12', brand: 'Redmi', price: '', image: 'https://via.placeholder.com/150', alt: 'Redmi Note 12' }
+];
